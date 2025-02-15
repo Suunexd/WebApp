@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Reclamații</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+
+    
+    <div class="card">
+        <h3>Tipuri de defecte</h3>
+        <div class="chart-container">
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Rupturi", "Fisuri"],
+                datasets: [{
+                    label: "Tipuri de defecte",
+                    data: [55, 26],
+                    backgroundColor: ["yellow", "gray"]
+                }]
+            }
+        });
+    </script>
+    
+</body>
+</html>

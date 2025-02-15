@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raportare Defecte Produse</title>
+    <link rel="shortcut icon" href="resources/favicon.jpg" type="image/png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="raportare/raportare.css">
+</head>
+<body>
+   
+    <header>
+        <div class="navbar-container">
+
+            <div class="logo">
+            <a href="main.html">
+                <img src="resources/logo.svg">
+            </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-components">
+                    <li>
+                        <a href="/HACK/main.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/HACK/raportare.html" class="nav-link">
+                            Raportare
+                        </a>
+    
+                    </li>
+
+                    <li>
+                        <a href="/HACK/dashboard.html" class="nav-link">
+                            Dashboard
+                        </a>
+    
+                    </li>
+
+                    <li>
+                        <a href="/HACK/contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="nav-link">
+                            Login
+                        </a> 
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="btn" id="dark-mode">
+                Dark mode
+            </button>
+        </div>
+    </header>
+
+    <div class="response">
+        <span class="restext">Mesajul a fost trimis cu succes!</span>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="header">
+                <img src="resources/logo.svg" alt="Logo">
+                <h1>Raportează un Defect</h1>
+            </div>
+            <form>
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume" required>
+                
+                <label for="prenume">Prenume:</label>
+                <input type="text" id="prenume" name="prenume" required>
+
+                <label for="defect">Descrierea Defectului:</label>
+                <textarea id="defect" name="defect" rows="4" required></textarea>
+                
+                <label for="category">Categorie Defect:</label>
+                <select id="category" name="category" required>
+                    <option value="defect_estetic">Defect estetic</option>
+                    <option value="functionalitate">Funcționalitate</option>
+                    <option value="ambalaj">Ambalaj</option>
+                    <option value="Defect_electric">Defect electric</option>
+                    <option value="Altul">Altul</option>
+                </select>
+
+                <label for="images">Încarcă Imagini:</label>
+                <input type="file" id="images" name="images" accept="image/*" multiple>
+                   
+                <input type="button"  class="button" value="Trimite" href="mailto:office@alumil.ro">
+        
+            </form>
+        </div>
+       
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="tel:+40214243456">Telefon: 021 424 3456</a></li>
+                    <li>Email: <a href="mailto:office@alumil.ro">office@alumil.ro</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/AlumilRomania/?locale=ro_RO"><img src="resources/image.png" alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/company/alumilromania/"><img src="resources/image copy 3.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/alumil_romania/"><img src="resources/image copy 2.png" alt="Instagram"></a>
+                </div>
+                <a href="contact.html">Contactați-ne</a>
+                <br>
+                <a href="https://www.alumil.com/romania/privacy-policy">Politica de Confidențialitate</a>
+                <br><br>
+                <h3>Abonați-vă la Newsletter</h3>
+                <a href="mailto:office@alumil.ro?subject=Abonare%20Newsletter">Abonează-te la Newsletter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="raportare/raportare.js"></script>
+</html>
